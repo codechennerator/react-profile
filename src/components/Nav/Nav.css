@@ -1,11 +1,16 @@
-.navigation{
+.top{
     display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: 1fr;
+    grid-auto-flow: column;
     align-items: center;
+    grid-gap: 20px;
 }
 .navitem{
+    display: block;
     text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
 }
 .navitem:hover{
     text-decoration: underline
