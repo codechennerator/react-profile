@@ -1,0 +1,12 @@
+.navigation{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+}
+.navitem{
+    text-decoration: none;
+}
+.navitem:hover{
+    text-decoration: underline
+}
