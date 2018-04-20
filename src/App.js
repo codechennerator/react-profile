@@ -1,12 +1,20 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
 import { Home, Portfolio } from "./pages";
-import { Nav } from "./components";
+import { Nav, Footer } from "./components";
 
+const appStyle = {
+  "display": "grid", 
+  "margin": "20px 100px 0px 100px",
+  "minHeight": "100%",
+  "gridTemplateRows": "1fr auto",
+  "gridTemplateColumns": "100%"
+}
 class App extends Component {
   render() {
     return (
-      <div className="App" style = {{"display": "grid", "gridGap": "20px", "margin": "50px"}}>
+      <div className="App" style = {appStyle}>
+        
         <Router>
           <div className = "router">
             <Nav />
@@ -16,6 +24,7 @@ class App extends Component {
             </Switch>
           </div>
         </Router>
+        <Footer />
       </div>
     );
   }
