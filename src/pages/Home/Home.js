@@ -1,5 +1,27 @@
 import React, { Component } from 'react';
 import './Home.css';
+
+const style = {
+  "content": {
+    "display": "grid",
+    "gridTemplateAreas": "\"intro1\"\n        \"intro2\"",
+    "gridTemplateRows": "auto 1fr",
+    "gridGap": "20px"
+  },
+  "intro1": {
+    "gridArea": "intro1"
+  },
+  "intro2": {
+    "gridArea": "intro2",
+    "gridColumnEnd": "3",
+    "display": "grid",
+    "gridGap": "20px",
+    "gridTemplateColumns": "repeat(auto-fit, minmax(300px, 1fr))"
+  },
+  "i2_item": {
+    "display": "block"
+  }
+}
 class Home extends Component{
   render(){
     return (

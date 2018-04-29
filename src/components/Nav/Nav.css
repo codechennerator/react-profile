@@ -1,17 +1,17 @@
-.top{
+:local(.top){
     display: grid;
     grid-template-columns: 1fr;
     grid-auto-flow: column;
     align-items: center;
     grid-gap: 20px;
 }
-.navitem{
+:local(.navitem){
     display: block;
     text-decoration: none;
     padding: 10px;
     text-align: center;
     font-size: 18px;
 }
-.navitem:hover{
+:local(.navitem:hover){
     text-decoration: underline
 }
