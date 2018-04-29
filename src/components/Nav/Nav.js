@@ -1,35 +1,39 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
-const style = {
-    "top": {
-      "display": "grid",
-      "gridTemplateColumns": "1fr",
-      "gridAutoFlow": "column",
-      "alignItems": "center",
-      "gridGap": "20px"
-    },
-    "navitem": {
-      "display": "block",
-      "textDecoration": "none",
-      "padding": "10px",
-      "textAlign": "center",
-      "fontSize": "18px"
-    },
-    "navitem_hover": {
-      "textDecoration": "underline"
+const NavWrapper = styled.div`
+    display: grid;
+    background-color: #557A95;
+    grid-template-rows: 6fr repeat(16, 1fr);
+    align-items: center;
+    grid-gap: 5px;
+`;
+const NameHeader = styled(Link)`
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    &:hover{
+        text-decoration: underline;
     }
-  }
+`;
+const NavItem = styled(Link)`
+    text-decoration: none;
+    color: black
+    &:hover{
+        text-decoration: underline;
+    }
+`;
 class Nav extends Component{
     render(){
         return(
-            <nav className = "top" style = {style.top}>
-                <div className = "header">
+            <NavWrapper>
+                <NameHeader to = "/">
                     <h2>Nathan Chen</h2>
-                </div>
-                <Link to = "/" className = "navitem" style = {style.navitem}>Home</Link>
-                <Link to = "/portfolio" className = "navitem" style = {style.navitem}>Portfolio</Link>
-            </nav>
+                </NameHeader>
+                <NavItem to = "/">Home</NavItem>
+                <NavItem to = "/portfolio">Portfolio</NavItem>
+            </NavWrapper>
         )
     }
 }

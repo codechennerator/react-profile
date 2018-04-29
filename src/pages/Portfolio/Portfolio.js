@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
-
+import { Content } from '../../components';
 class Portfolio extends Component{
   render(){
     return (
-        <h1>Portfolio</h1>
+        <Content>
+          <h1>Portfolio</h1>
+        </Content>
     );
   }
 }
