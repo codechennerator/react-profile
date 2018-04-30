@@ -8,11 +8,17 @@ const AppWrapper = styled.div`
   height: 100%;
 `;
 const StyledNav = styled(Nav)`
-  grid-area: menu
+  grid-area: menu;
+  height: 100%;
 `;
-const StyledSwitch = styled(Switch)`
-  grid-area: content
-`
+const Content = styled.div`
+  grid-area: content;
+  padding: 25px 75px 25px 75px;
+  background-color: whitesmoke;
+  @media (max-width: 980px){
+      padding: 15px 50px 15px 50px;
+  }
+`;
 const RouterWrapper =styled.div`
   display: grid; 
   min-height: 100%;
@@ -20,7 +26,7 @@ const RouterWrapper =styled.div`
   grid-template-areas: "menu content";
   @media (max-width: 980px){
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: auto 1fr;
     grid-template-areas: "menu"
                          "content";
   }
@@ -33,10 +39,12 @@ class App extends Component {
         <Router>
           <RouterWrapper>
             <StyledNav />
-            <StyledSwitch>
-              <Route exact path = "/" component = {Home} />
-              <Route exact path = "/portfolio" component = {Portfolio} />
-            </StyledSwitch>
+            <Switch>
+              <Content className = "test">
+                <Route exact path = "/" component = {Home} />
+                <Route exact path = "/portfolio" component = {Portfolio} />
+              </Content>
+            </Switch>
           </RouterWrapper>
         </Router>
       </AppWrapper>
