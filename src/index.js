@@ -12,4 +12,7 @@ injectGlobal`
         height: 100%;
         margin: 0;
     }
+    body{
+        font-family: 'Raleway', sans-serif;
+    }
 `

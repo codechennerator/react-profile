@@ -7,28 +7,36 @@ import styled from 'styled-components';
 const AppWrapper = styled.div`
   height: 100%;
 `;
+const StyledNav = styled(Nav)`
+  grid-area: menu
+`;
+const StyledSwitch = styled(Switch)`
+  grid-area: content
+`
 const RouterWrapper =styled.div`
-  display: grid;
-  background-color: grey; 
+  display: grid; 
   min-height: 100%;
   grid-template-columns: 1fr 3fr;
-`;
-const StyledRoute = styled(Route)`
-  padding: 50px;
+  grid-template-areas: "menu content";
+  @media (max-width: 980px){
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "menu"
+                         "content";
+  }
 `;
 
 class App extends Component {
   render() {
     return (
       <AppWrapper>
-        
         <Router>
           <RouterWrapper>
-            <Nav />
-            <Switch>
+            <StyledNav />
+            <StyledSwitch>
               <Route exact path = "/" component = {Home} />
               <Route exact path = "/portfolio" component = {Portfolio} />
-            </Switch>
+            </StyledSwitch>
           </RouterWrapper>
         </Router>
       </AppWrapper>
