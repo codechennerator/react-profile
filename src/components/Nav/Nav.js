@@ -4,11 +4,10 @@ import styled from 'styled-components';
 import me from '../../images/me.jpg';
 const NavWrapper = styled.div`
     display: grid;
-    background-color: #557A95;
+    background-color: rgba(85, 122, 149, 0.9);
     grid-template-areas: "head"
                          "nav";
-    grid-template-rows: 1fr 3fr;
-    grid-gap: 50px;
+    grid-template-rows: 1fr 2fr;
     padding-top: 25px;
     @media (max-width: 980px){
         grid-template-columns: 1fr;
@@ -47,7 +46,7 @@ const JobTitle = styled.p`
 const Menu = styled.div`
     display: grid;
     grid-area: nav;
-    grid-template-rows: repeat(auto-fill, 35px);
+    grid-template-rows: repeat(auto-fill, 45px);
     height: auto;
     padding-left: 50px;
     @media (max-width: 980px){
@@ -71,7 +70,7 @@ const StyledLink = styled(Link)`
     text-decoration: none;
     color: white;
     opacity: 0.7;
-    text-transform: uppercase
+    font-size: 20px;
     &:hover{
         opacity: 1.0;
         text-decoration: underline;
@@ -112,11 +111,11 @@ class Nav extends Component{
                 </NameHeader>
                 <Menu>
                     <MenuToggle onClick = {this.menuHandler}>&#9776;</MenuToggle>
-                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/about" onClick = {this.hideMenu}>
-                        About
-                    </StyledLink>
                     <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/portfolio" onClick = {this.hideMenu}>
                         Portfolio
+                    </StyledLink>
+                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/about" onClick = {this.hideMenu}>
+                        About
                     </StyledLink>
                     <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/contact" onClick = {this.hideMenu}>
                         Contact

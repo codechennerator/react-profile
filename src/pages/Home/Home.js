@@ -1,15 +1,75 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
+const HomeWrapper = styled.div`
+  @media (min-width: 980px){
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 11fr 1fr;
+    grid-template-areas: "intro ."
+                         "learn ."
+                         ".     .";
+    height: 100%;
+  }
+`;
+const HomeText = styled.div`
+  grid-area: intro;
+  align-self: end;
+`;
+const HomeH = styled.h1`
+  font-size: 45px;
+`;
+const HomeP = styled.p`
+  font-size: 25px;
+`;
+const LearnMore = styled.div`
+  grid-area: learn;
+  align-self: center;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-rows: repeat(auto-fill, 50px);
+`;
+const Button = styled.button`
+  border: 0px;
+  border-radius: 5%;
+  background-color: #557A95;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+  padding: 15px 25px 15px 25px;
+  align-self: center;
+  :hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    cursor: pointer;
+  }
+`;  
 class Home extends Component{
   render(){
     return (
-      <div>
-        <h1 className="intro1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec congue risus. Pellentesque laoreet fringilla elementum.</h1>
-        <div className = "intro2">
-            <p className="i2-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec sagittis felis, eu scelerisque elit. Sed justo dolor, vestibulum quis enim sit amet, facilisis accumsan massa. Nulla venenatis, lacus vel lacinia consectetur, neque purus ullamcorper lacus, id elementum est diam sed quam. </p>
-            <p className="i2-item">Phasellus mattis lorem non dui euismod feugiat. Nunc vulputate ex nisl, at hendrerit ante consectetur sit amet. Sed non fringilla ante. In pellentesque enim vel mollis faucibus. Morbi quis tortor sollicitudin, dapibus quam ac, ornare est. Phasellus eget magna in mauris suscipit aliquam eu id elit. Fusce ornare, dui vitae fringilla vestibulum, dui arcu volutpat sapien, non vehicula quam enim at leo. Donec sed diam vel odio placerat elementum. Proin scelerisque posuere ligula sed aliquam. Donec nec congue risus. Pellentesque laoreet fringilla elementum.</p>
-        </div>
-      </div>
+      <HomeWrapper>
+        <HomeText>
+          <HomeH>Hello, I am Nathan Chen</HomeH>
+          <HomeP>
+            I am a full stack developer, ready to take on new challenges and develop highly functional 
+            and organized websites!
+          </HomeP>
+        </HomeText>
+        <LearnMore>
+          <h2>Learn More: </h2>
+          <Link to = "/portfolio">
+            <Button>
+              Portfolio
+            </Button>
+          </Link>
+          <Link to = "/about">
+            <Button>
+              About Me
+            </Button>
+          </Link>
+        </LearnMore>
+      </HomeWrapper>
     );
   }
 }
