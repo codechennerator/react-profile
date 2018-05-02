@@ -11,6 +11,12 @@ const ContactWrapper = styled.div`
     grid-row-gap: 10px;
     font-size: 25px;
     align-items: start;
+    @media(max-width: 640px){
+        grid-template-columns: 1fr;
+    };
+    @media(max-width: 370px){
+       font-size: 20px;
+    };
 `;
 const ContactType = styled.p`
     margin: 0px;
