@@ -9,7 +9,7 @@
     "react-scripts": "1.1.4",
     "styled-components": "^3.2.6"
   },
-  "homepage": "http://codechennerator.github.io/react-profile",
+  "homepage": "http://codechennerator.github.io/react-profile/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

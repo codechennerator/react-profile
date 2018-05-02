@@ -23,10 +23,10 @@ class Contact extends Component{
       return (
           <div>
             <h1>Contact</h1>
-            <p>Please contact me if you are interested in my work!</p>
+            <p>I'm currently looking for work! Feel free to contact me if you're interested in my skills!</p>
             <ContactWrapper>
-                <ContactType>Email: </ContactType>      <ContactA href = "mailto:chenl.nathan@gmail.com"><span><img src = {email} alt = "email"/></span>chenl.nathan@gmail.com</ContactA>
-                <ContactType>Github: </ContactType>     <ContactA href = "https://github.com/codechennerator"><span><img src = {github} alt = "git"/></span>codechennerator</ContactA>
+                <ContactType>Email: </ContactType>      <ContactA href = "mailto:chenl.nathan@gmail.com"><img src = {email} alt = "email"/>chenl.nathan@gmail.com</ContactA>
+                <ContactType>Github: </ContactType>     <ContactA href = "https://github.com/codechennerator"><img src = {github} alt = "git"/>codechennerator</ContactA>
                 <ContactType>LinkedIn: </ContactType>   <ContactA href = "https://www.linkedin.com/in/nathan-chen-66416b7a/"><img src = {linkedin} alt = "linkedin"/>Nathan Chen</ContactA>
             </ContactWrapper> 
           </div>

@@ -115,7 +115,7 @@ class Nav extends Component{
                         Portfolio
                     </StyledLink>
                     <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/about" onClick = {this.hideMenu}>
-                        About
+                        About Me
                     </StyledLink>
                     <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/contact" onClick = {this.hideMenu}>
                         Contact
