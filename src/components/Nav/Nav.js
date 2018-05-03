@@ -7,13 +7,11 @@ const NavWrapper = styled.div`
     background-color: rgba(85, 122, 149, 0.9);
     grid-template-areas: "head"
                          "nav";
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 300px 1fr;
     padding-top: 25px;
     @media (max-width: 980px){
         grid-template-columns: 1fr;
         grid-template-rows: 1fr auto;
-        grid-template-areas: "head"
-                             "nav";
         padding-top: 10px;
         grid-gap: 0px;
     }
@@ -23,7 +21,7 @@ const NameHeader = styled(Link)`
     text-decoration: none;
     color: white;
     text-align: center;
-    height: 90%
+    height: 90%;
     &:hover{
         text-decoration: underline;
     }

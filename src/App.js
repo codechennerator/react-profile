@@ -10,6 +10,7 @@ const AppWrapper = styled.div`
 `;
 const StyledNav = styled(Nav)`
   grid-area: menu;
+  min-height: 0;
 `;
 const Content = styled.div`
   grid-area: content;
@@ -29,6 +30,12 @@ const RouterWrapper =styled.div`
   grid-template-columns: 1fr 3fr;
   grid-template-areas: "menu content";
   background-image: url(${ttower});
+  background-repeat:no-repeat;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+  background-position:center;
   @media (max-width: 980px){
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr;
