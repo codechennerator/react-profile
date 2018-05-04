@@ -12,6 +12,9 @@ injectGlobal`
         height: 100%;
         margin: 0;
     }
+    html{
+        overflow-y: scroll;
+    }
     body{
         font-family: 'Raleway', sans-serif;
     }
