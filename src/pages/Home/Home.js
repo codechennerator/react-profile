@@ -58,12 +58,12 @@ class Home extends Component{
         </HomeText>
         <LearnMore>
           <h2>Learn More: </h2>
-          <Link to = "/portfolio">
+          <Link to = {process.env.PUBLIC_URL + "/portfolio"}>
             <Button>
               Portfolio
             </Button>
           </Link>
-          <Link to = "/about">
+          <Link to = {process.env.PUBLIC_URL + "/about"}>
             <Button>
               About Me
             </Button>

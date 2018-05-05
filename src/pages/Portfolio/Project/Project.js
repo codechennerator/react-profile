@@ -83,13 +83,13 @@ class Project extends Component{
                 <ProjectNav>
                     <ArrowBackground>
                     {this.state.index !== 0 && this.state.index !== undefined &&
-                        <StyledArrows to = {{pathname: "/project/" + projects[this.state.index-1].path}}><h1>&#60;</h1></StyledArrows>
+                        <StyledArrows to = {{pathname: process.env.PUBLIC_URL + "/project/" + projects[this.state.index-1].path}}><h1>&#60;</h1></StyledArrows>
                     }
                     </ArrowBackground>
                     <h1>{project.name}</h1>
                     <ArrowBackground>
                     {this.state.index + 1 !== projects.length && this.state.index !== undefined &&
-                        <StyledArrows to = {{pathname: "/project/" + projects[this.state.index+1].path}}><h1>&#62;</h1></StyledArrows>
+                        <StyledArrows to = {{pathname: process.env.PUBLIC_URL + "/project/" + projects[this.state.index+1].path}}><h1>&#62;</h1></StyledArrows>
                     }
                     </ArrowBackground>
                 </ProjectNav>
@@ -98,7 +98,7 @@ class Project extends Component{
                 {project.details !== undefined &&
                     <Button>
                         <AToRepository href = {project.details.github}>
-                            <OpenIcon src = {openpage} alt = 'open'/> See repository
+                            <OpenIcon src = {openpage} alt = 'open' target="_blank"/> See repository
                         </AToRepository>
                     </Button>
                 }

@@ -102,20 +102,20 @@ class Nav extends Component{
     render(){
         return(
             <NavWrapper>
-                <NameHeader to = "/">
+                <NameHeader to = {process.env.PUBLIC_URL + "/"}>
                     <Me src={me} alt = "me"/>
                     <Name>NATHAN CHEN</Name>
                     <JobTitle>Full-Stack Web Developer</JobTitle>
                 </NameHeader>
                 <Menu>
                     <MenuToggle onClick = {this.menuHandler}>&#9776;</MenuToggle>
-                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/portfolio" onClick = {this.hideMenu}>
+                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = {process.env.PUBLIC_URL + "/portfolio"} onClick = {this.hideMenu}>
                         Portfolio
                     </StyledLink>
-                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/about" onClick = {this.hideMenu}>
+                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = {process.env.PUBLIC_URL + "/about"} onClick = {this.hideMenu}>
                         About Me
                     </StyledLink>
-                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = "/contact" onClick = {this.hideMenu}>
+                    <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = {process.env.PUBLIC_URL + "/contact"} onClick = {this.hideMenu}>
                         Contact
                     </StyledLink>
                 </Menu>

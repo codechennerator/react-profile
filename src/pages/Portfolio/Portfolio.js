@@ -9,6 +9,9 @@ const ProjectWrapper = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-column-gap: 20px;
   grid-row-gap: 45px;
+  @media (max-width: 640px){
+    grid-template-columns: 1fr;
+  }
 `;
 const ProjectImg = styled.img`
   grid-column: 1 / -1;
