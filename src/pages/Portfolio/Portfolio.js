@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 // import imgplaceholder from '../../images/placeholder-400x400.png';
-import projects from './projects.json';
+import projects from '../../data/projects.json';
 
 const ProjectWrapper = styled.div`
   display: grid;
