@@ -53,11 +53,11 @@ class App extends Component {
             <StyledNav />
             <Switch>
               <Content>
-                <Route exact path = "/" component = {Home} />
-                <Route exact path = "/portfolio" component = {Portfolio} />
-                <Route exact path = "/about" component = {AboutMe} />
-                <Route exact path = "/contact" component = {Contact} />
-                <Route exact path = "/project/:path" component = {Project} />
+                <Route exact path = {process.env.PUBLIC_URL + "/"} component = {Home} />
+                <Route exact path = {process.env.PUBLIC_URL + "/portfolio"} component = {Portfolio} />
+                <Route exact path = {process.env.PUBLIC_URL + "/about"} component = {AboutMe} />
+                <Route exact path = {process.env.PUBLIC_URL + "/contact"} component = {Contact} />
+                <Route exact path = {process.env.PUBLIC_URL + "/project/:path"} component = {Project} />
               </Content>
             </Switch>
           </RouterWrapper>

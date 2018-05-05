@@ -4,8 +4,9 @@
         "description": "Share Economy App For Tools",
         "img": "https://i.imgur.com/EyOxIhp.png",
         "path": "toolntool",
-        "detail": {
-            "github": "https://github.com/codechennerator/toolNtool"
+        "details": {
+            "github": "https://github.com/codechennerator/toolNtool",
+            "tech": ["react", "redux", "mongodb", "node", "passport"]
         }
     },
     {
@@ -13,8 +14,9 @@
         "description": "Data App to Track Spending",
         "img": "https://i.imgur.com/owxqMmC.png",
         "path": "moneyrocket",
-        "detail": {
-            "github": "https://github.com/garrettbear/money-map"
+        "details": {
+            "github": "https://github.com/garrettbear/money-map",
+            "tech": ["node", "passport", "sequelize", "d3", "handlebars", "materialize"]
         }
     },
     {
@@ -22,8 +24,9 @@
         "description": "Computer Trivia",
         "img": "https://i.imgur.com/15PNk8Q.png",
         "path": "trivia",
-        "detail": {
-            "github": "https://github.com/codechennerator/TriviaGame"
+        "details": {
+            "github": "https://github.com/codechennerator/TriviaGame",
+            "tech": ["html", "css", "javascript", "jquery"]
         }
     }
 ]
