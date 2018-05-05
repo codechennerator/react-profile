@@ -77,7 +77,7 @@ class Portfolio extends Component{
                 <ProjectDiv key = {index}>
                   <OverlayDiv>
                     <ProjectImg src = {project.img} />
-                    <Overlay to = {{pathname:"/project/" + project.path}}>
+                    <Overlay to = {{pathname: process.env.PUBLIC_URL + "/project/" + project.path}}>
                       <StyledButton>View-></StyledButton>
                     </Overlay>
                   </OverlayDiv>
