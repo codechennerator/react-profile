@@ -11,7 +11,7 @@ class AboutMe extends Component{
         <div>
             <h1>About Me</h1>
             <MeMain>
-                I'm a full stack developer currently looking for a junior developer job. My technical expertise currently lies in React/Javascript, Node.js, HTML, and MongoDB. However, I'm also proficient
+                I'm a full stack developer currently looking for a junior developer position. My technical expertise currently lies in React/Javascript, Node.js, HTML, and MongoDB. However, I'm also proficient
                 at CSS, jQuery and SQL while also being experienced in Java and C++.
             </MeMain>
             <h2>My Mindset:</h2>

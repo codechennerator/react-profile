@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'; 
-import { Home, Portfolio, Contact, AboutMe } from "./pages";
+import { Home, Portfolio, Contact, AboutMe, Project } from "./pages";
 import { Nav } from "./components";
 import styled from 'styled-components';
 import ttower from './images/ttower.JPG';
@@ -57,6 +57,7 @@ class App extends Component {
                 <Route exact path = "/portfolio" component = {Portfolio} />
                 <Route exact path = "/about" component = {AboutMe} />
                 <Route exact path = "/contact" component = {Contact} />
+                <Route exact path = "/project/:path" component = {Project} />
               </Content>
             </Switch>
           </RouterWrapper>

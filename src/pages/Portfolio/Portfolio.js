@@ -6,9 +6,9 @@ import projects from './projects.json';
 
 const ProjectWrapper = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px,400px));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-column-gap: 20px;
-  grid-row-gap: 30px;
+  grid-row-gap: 45px;
 `;
 const ProjectImg = styled.img`
   grid-column: 1 / -1;
@@ -44,7 +44,11 @@ const OverlayDiv = styled.div`
   }
 `;
 const StyledH3 = styled.h3`
+  margin-top: 10px;
   margin-bottom: 0;
+`;
+const StyledDescription = styled.p`
+  margin-top: 5px;
 `;
 const StyledButton = styled.button`
   border: 3px solid white;
@@ -70,12 +74,12 @@ class Portfolio extends Component{
                 <ProjectDiv key = {index}>
                   <OverlayDiv>
                     <ProjectImg src = {project.img} />
-                    <Overlay to = {`/project/" + ${index}`}>
+                    <Overlay to = {{pathname:"/project/" + project.path}}>
                       <StyledButton>View-></StyledButton>
                     </Overlay>
                   </OverlayDiv>
                   <StyledH3>{project.name}</StyledH3>
-                  <p>{project.description}</p>
+                  <StyledDescription>{project.description}</StyledDescription>
                 </ProjectDiv>
               )
             }

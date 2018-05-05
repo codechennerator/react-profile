@@ -2,16 +2,28 @@
     {
         "name": "ToolNTool",
         "description": "Share Economy App For Tools",
-        "img": "https://i.imgur.com/kTSrbEP.png"
+        "img": "https://i.imgur.com/EyOxIhp.png",
+        "path": "toolntool",
+        "detail": {
+            "github": "https://github.com/codechennerator/toolNtool"
+        }
     },
     {
         "name": "Money Rocket",
         "description": "Data App to Track Spending",
-        "img": "https://i.imgur.com/kTSrbEP.png"
+        "img": "https://i.imgur.com/owxqMmC.png",
+        "path": "moneyrocket",
+        "detail": {
+            "github": "https://github.com/garrettbear/money-map"
+        }
     },
     {
         "name": "Trivia Game",
         "description": "Computer Trivia",
-        "img": "https://i.imgur.com/kTSrbEP.png"
+        "img": "https://i.imgur.com/15PNk8Q.png",
+        "path": "trivia",
+        "detail": {
+            "github": "https://github.com/codechennerator/TriviaGame"
+        }
     }
 ]
