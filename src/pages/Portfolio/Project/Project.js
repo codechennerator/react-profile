@@ -70,6 +70,9 @@ const DescriptionWrapper = styled.div`
 `;
 const DescriptionList = styled.ul`
   text-align: left;
+  font-size: 18px;
+  display: grid;
+  grid-row-gap: 10px;
 `;
 class Project extends Component{
     constructor(props){
