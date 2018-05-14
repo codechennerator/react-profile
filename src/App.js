@@ -22,7 +22,7 @@ const Content = styled.div`
   };
   @media (max-width: 640px){
     padding: 5px 25px 5px 25px;
-}
+  }
 `;
 const RouterWrapper =styled.div`
   display: grid; 

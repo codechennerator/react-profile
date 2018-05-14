@@ -2,6 +2,10 @@ import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import me from '../../images/me.jpg';
+import email from '../../images/email.png';
+import github from '../../images/github.png';
+import linkedin from '../../images/linkedin.png';
+
 const NavWrapper = styled.div`
     display: grid;
     background-color: rgba(85, 122, 149, 0.9);
@@ -51,6 +55,10 @@ const Menu = styled.div`
         grid-template-rows: auto;
         height: auto;
     }
+    @media (max-width: 640px){
+        padding-left: 25px;
+        padding-right: 25px;
+    }
 `;
 const MenuToggle = styled.span`
     display: none;
@@ -79,7 +87,11 @@ const StyledLink = styled(Link)`
         display: ${props => props.toggle || 'none'};
     }
 `;
-
+const MiniContact = styled.div`
+    display: grid;
+    grid-template-columns: 25px 25px 25px;
+    grid-column-gap: 10px;
+`;
 class Nav extends Component{
     constructor(props){
         super(props);
@@ -108,6 +120,11 @@ class Nav extends Component{
                     <JobTitle>Full-Stack Web Developer</JobTitle>
                 </NameHeader>
                 <Menu>
+                    <MiniContact>
+                        <a href = "mailto:chenl.nathan@gmail.com"><img src = {email} alt = "email"/></a>
+                        <a href = "https://github.com/codechennerator"><img src = {github} alt = "git"/></a>
+                        <a href = "https://www.linkedin.com/in/nathan-chen-66416b7a/"><img src = {linkedin} alt = "linkedin"/></a>
+                    </MiniContact>
                     <MenuToggle onClick = {this.menuHandler}>&#9776;</MenuToggle>
                     <StyledLink toggle = {(this.state.toggleMenu) ? 'block' : 'none'} to = {process.env.PUBLIC_URL + "/portfolio"} onClick = {this.hideMenu}>
                         Portfolio

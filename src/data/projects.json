@@ -6,7 +6,10 @@
         "path": "toolntool",
         "details": {
             "github": "https://github.com/codechennerator/toolNtool",
-            "tech": ["react", "redux", "mongodb", "node", "passport"]
+            "tech": ["react", "redux", "mongodb", "node", "passport"],
+            "createdOn": "March 5, 2018",
+            "purpose": "ToolNTool is a concept project that demonstrates the usefulness of share economies with tools. Users who create an account are able to connect with other users to lend or borrow their tools.",
+            "role": "My main responsibilities for this project were creating the backend, implementing Passport.js for authentication, and handling APIs with and without Redux. Outside the code, I was also responsible for the Git repository as well as the heroku deployment."
         }
     },
     {
@@ -16,7 +19,10 @@
         "path": "moneyrocket",
         "details": {
             "github": "https://github.com/garrettbear/money-map",
-            "tech": ["node", "passport", "sequelize", "d3", "handlebars", "materialize"]
+            "tech": ["node", "passport", "sequelize", "d3", "handlebars", "materialize"],
+            "createdOn": "January 29, 2018",
+            "purpose": "MoneyRocket is a data project that takes in data on a user's spending habits and displays the data so a user can visually track their spending.",
+            "role": "My main responsibilities for this project included implementing D3 to handle data logic and Passport for authentication. I also handled conflicts and merging for our Git reposit."
         }
     },
     {
@@ -26,7 +32,10 @@
         "path": "trivia",
         "details": {
             "github": "https://github.com/codechennerator/TriviaGame",
-            "tech": ["html", "css", "javascript", "jquery"]
+            "tech": ["html", "css", "javascript", "jquery"],
+            "createdOn": "October 30, 2017",
+            "purpose": "I created this trivia game to test classes, timers, and game logic with Javascript. It features score tracking, question difficulty, timers, confirmations, audio, and mobile responsiveness",
+            "role": "Sole Developer"
         }
     }
 ]
