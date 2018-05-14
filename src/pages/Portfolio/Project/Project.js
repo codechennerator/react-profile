@@ -143,10 +143,7 @@ class Project extends Component{
                         {project.details !== undefined &&
                             <Button>
                                 <AToRepository href = {project.details.github} target="_blank">
-                                    <OpenIcon src = {openpage} alt = 'open'/> See repository
-                                </AToRepository>
-                                <AToRepository href = {project.details.github} target="_blank">
-                                    <OpenIcon src = {openpage} alt = 'open'/> See repository
+                                    <OpenIcon src = {openpage} alt = 'open'/> See Git Repo
                                 </AToRepository>
                             </Button>
                         }
