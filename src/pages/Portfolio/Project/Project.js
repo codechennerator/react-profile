@@ -43,7 +43,7 @@ const Button = styled.button`
   font-weight: 500;
   font-size: 15px;
   color: white;
-  padding: 10px 20px 10px 20px;
+  padding: 10px 15px 10px 15px;
   :hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     cursor: pointer;
@@ -73,6 +73,16 @@ const DescriptionList = styled.ul`
   font-size: 18px;
   display: grid;
   grid-row-gap: 10px;
+`;
+const IconWrapper = styled.div`
+  display: grid;
+  grid-row-gap: 10px;
+  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
+`;
+const TechImage = styled.img`
+  height: 115px;
+  width: 115px;
 `;
 class Project extends Component{
     constructor(props){
@@ -135,13 +145,19 @@ class Project extends Component{
                     </DescriptionWrapper>
                     <LinkWrapper>
                         <h3>Tech:</h3>
-
-                        {project.details !== undefined &&
-                            project.details.tech.map(technames => {
-                                return <Button key = {technames}>{technames}</Button>
-                            })
-                        }
-
+                        <IconWrapper>
+                            {project.details !== undefined &&
+                                project.details.tech.map((technames,index) => {
+                                    
+                                    return (
+                                        <div key = {index}>
+                                            <TechImage src = {`${Object.values(technames)}`} />
+                                            <Button>{Object.keys(technames)}</Button>
+                                        </div>
+                                    );
+                                })
+                            }
+                        </IconWrapper>
                         <h3>Links:</h3>
                         {project.details !== undefined &&
                             <Button>
