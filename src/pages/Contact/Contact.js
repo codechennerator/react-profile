@@ -29,7 +29,7 @@ class Contact extends Component{
       return (
           <div>
             <h1>Contact</h1>
-            <p>I'm currently looking for work! Feel free to contact me if you're interested in my skills!</p>
+            <p>I'm currently looking for a job as a junior developer! Feel free to contact me if you're interested in my skills!</p>
             <ContactWrapper>
                 <ContactType>Email: </ContactType>      <ContactA href = "mailto:chenl.nathan@gmail.com"><img src = {email} alt = "email"/>chenl.nathan@gmail.com</ContactA>
                 <ContactType>Github: </ContactType>     <ContactA href = "https://github.com/codechennerator"><img src = {github} alt = "git"/>codechennerator</ContactA>

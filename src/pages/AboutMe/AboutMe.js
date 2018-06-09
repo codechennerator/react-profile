@@ -16,9 +16,10 @@ class AboutMe extends Component{
             </MeMain>
             <h2>My Mindset:</h2>
             <p>
-                &emsp;&emsp;My primary goal is to produce highly functional and organized software. For web development, this translates to impressive,but bug free websites. I understand the importance
-                of clean code and the heavy costs of maintaining software with poor architecture. Ultimately, doing things right the first time saves more time and money than hacking out a functional
-                but buggy website. I'm also not afraid to learn new things. The technology for the web stack is developing incredibly quickly, and I'm always eager to jump in to learn more where my skills are lacking.
+                &emsp;&emsp;My primary goal is to produce highly functional and organized software. For web development, this translates to impressive but bug free websites. I understand the importance
+               of DRY code and the benefits it provides for users, developers, and the bottom line. I'm also not afraid to learn new things. The technology for the web stack is developing incredibly quickly, 
+               and I'm always eager to jump in to upgrade my toolset. 
+
             </p>
             <h2>Short Bio:</h2>
             <p>
