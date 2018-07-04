@@ -80,6 +80,11 @@ const IconWrapper = styled.div`
   justify-items: center;
   grid-template-columns: repeat(auto-fit, minmax(115px, 1fr));
 `;
+const ImageWrapper = styled.div`
+  display: grid;
+  justify-items: center;
+  grid-row-gap: 10px;
+`;
 const TechImage = styled.img`
   height: 115px;
   width: 115px;
@@ -150,10 +155,10 @@ class Project extends Component{
                                 project.details.tech.map((technames,index) => {
                                     
                                     return (
-                                        <div key = {index}>
+                                        <ImageWrapper key = {index}>
                                             <TechImage src = {`${Object.values(technames)}`} />
                                             <Button>{Object.keys(technames)}</Button>
-                                        </div>
+                                        </ImageWrapper>
                                     );
                                 })
                             }

@@ -25,6 +25,19 @@
             "role": "My main responsibilities for this project included implementing D3 to handle data logic and Passport for authentication. I also handled conflicts and merging for our Git reposit."
         }
     },
+    {   "name": "Mouse And Maze",
+        "description": "A web version of the robotic tournament Micromouse",
+        "img": "https://i.imgur.com/jhQnFS1.png",
+        "path": "mouseandmaze",
+        "details": {
+            "github": "https://github.com/codechennerator/mouseAndMaze",
+            "tech": [{"html": "https://i.imgur.com/nE9tnhn.png"}, {"css": "https://i.imgur.com/R6AseFk.png"}, {"javascript": "https://i.imgur.com/XcxgHNJ.png"}],
+            "createdOn": "In Progress",
+            "purpose": "Mouse and Maze is a web imitation of the robotics competition Micromouse. The 'mouse' object will be able to find its way through any maze, memorize the quickest route, and find its way back to the goal",
+            "role": "I am the sole developer."
+        }
+
+    },
     {
         "name": "Trivia Game",
         "description": "Computer Trivia",
